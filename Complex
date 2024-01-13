@@ -1,0 +1,32 @@
+#ifndef __COMPLEX__
+#define __COMPLEX__
+
+class Complex {
+	double re, im;
+public:
+	Complex(double = 0, double = 0); //constructor
+
+	void Set(double = 0, double = 0);
+	void Set(const Complex &);
+
+	void Print() const;
+
+	double Re() const;
+	double Im() const;
+	double Mod() const;
+	double Arg() const;
+
+	Complex operator-(); // unary minus
+
+	Complex operator+(const Complex &) const; // binary
+	Complex operator-(const Complex &) const; //arithmetic
+	Complex operator*(const Complex &) const; //operations
+	Complex operator/(const Complex &) const; //
+
+	bool operator==(const Complex &) const; //comparison
+	bool operator!=(const Complex &) const; //operations
+
+	~ Complex(); //destructor
+};
+
+#endif
