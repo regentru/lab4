@@ -17,6 +17,8 @@ public:
 	double Arg() const;
 
 	Complex operator-(); // unary minus
+	
+	Complex Conjugate() const;
 
 	Complex operator+(const Complex &) const; // binary
 	Complex operator-(const Complex &) const; //arithmetic
@@ -26,7 +28,7 @@ public:
 	bool operator==(const Complex &) const; //comparison
 	bool operator!=(const Complex &) const; //operations
 
-	~ Complex(); //destructor
+	~Complex(); //destructor
 };
 
 #endif
